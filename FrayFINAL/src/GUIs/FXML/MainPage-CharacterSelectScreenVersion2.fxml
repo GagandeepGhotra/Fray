@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIs.ControllerClasses.MainPageCharacterScreenControllerVersion2">
+   <children>
+      <StackPane alignment="TOP_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../Images/LoginScreenBackground.jpg" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="gridPane" prefHeight="1080.0" prefWidth="1920.0">
+              <columnConstraints>
+                <ColumnConstraints fillWidth="true" hgrow="ALWAYS" minWidth="10.0" prefWidth="640.0" />
+                <ColumnConstraints fillWidth="true" hgrow="ALWAYS" minWidth="10.0" prefWidth="640.0" />
+                  <ColumnConstraints fillWidth="true" hgrow="ALWAYS" minWidth="10.0" prefWidth="640.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="534.0" minHeight="0.0" prefHeight="94.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="989.0" minHeight="6.0" prefHeight="986.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="90.0" prefWidth="1920.0" styleClass="displayInformationMain1" stylesheets="@../CSS/Main.css" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton layoutX="14.0" layoutY="19.0" onAction="#backButton" prefHeight="53.0" prefWidth="193.0" styleClass="loginBtn" stylesheets="@../CSS/Main.css" text="Back">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </JFXButton>
+                        <Text fill="WHITE" layoutX="845.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Race">
+                           <font>
+                              <Font size="46.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <ImageView fx:id="humanButton" fitHeight="991.0" fitWidth="640.0" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../../Images/0.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="humanRaceNameText" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Human" visible="false" wrappingWidth="160.40625" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="undeadButton" fitHeight="991.0" fitWidth="640.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../../Images/Undead.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="undeadRaceNameText" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Undead" visible="false" wrappingWidth="160.40625" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="elfButton" fitHeight="991.0" fitWidth="640.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../../Images/739021.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="elfRaceNameText" fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Elf" visible="false" wrappingWidth="55.40625" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

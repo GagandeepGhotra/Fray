@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="408.0" styleClass="displayInformationMain" stylesheets="@../CSS/Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIs.ControllerClasses.RegistrationClass">
+   <children>
+      <Label layoutX="53.0" layoutY="142.0" prefHeight="23.0" prefWidth="96.0" text="Fill the form " textFill="#61544b">
+         <font>
+            <Font name="Impact" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="95.0" text="Registration Form" textFill="#3c1b06">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="uTF" focusColor="#411d06" labelFloat="true" layoutX="62.0" layoutY="253.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Username" unFocusColor="#411d06">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="ppTF" focusColor="#411d06" labelFloat="true" layoutX="62.0" layoutY="345.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Password" unFocusColor="#411d06">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="continueToNextStepBtn" buttonType="RAISED" layoutX="62.0" layoutY="456.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mousePressed" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" text="Finish Sign Up">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="back" fitHeight="69.0" fitWidth="96.0" layoutX="38.0" layoutY="14.0" onMouseClicked="#backToLoginScreen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
